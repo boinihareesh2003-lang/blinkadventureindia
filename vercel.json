@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "build": {
+    "command": "npm run build"
+  },
+  "functions": {
+    "dist/server/server.js": {
+      "runtime": "nodejs22.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/dist/server/server.js"
+    }
+  ]
+}
